@@ -1,3 +1,5 @@
+import { link } from 'fs'
+
 export const navItems = [
 	{ name: 'About', link: '#about' },
 	{ name: 'Projects', link: '#projects' },
@@ -72,19 +74,31 @@ export const gridItems = [
 export const projects = [
 	{
 		id: 1,
-		title: '3D Solar System Planets to Explore',
-		des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
+		title: 'Medical Records Storage',
+		des: 'A medical record system powered by blockchain is a a groundbreaking solution that securely stores and manages patient health information.',
 		img: '/p1.png',
-		iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-		link: '/ui.earth.com',
+		iconLists: [
+			'/re.svg',
+			'/tail.svg',
+			'/js.png',
+			'/hardhat.jfif',
+			'/eth.jfif',
+		],
+		link: '/https://github.com/Anton1636/Medical-Records-Storage',
 	},
 	{
 		id: 2,
-		title: 'Yoom - Video Conferencing App',
-		des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
+		title: 'Crowd Funding',
+		des: 'These are platform where people or companies can support other people’s ideas using blockchain',
 		img: '/p2.png',
-		iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
-		link: '/ui.yoom.com',
+		iconLists: [
+			'/next.svg',
+			'/tail.svg',
+			'/js.png',
+			'/hardhat.jfif',
+			'/eth.jfif',
+		],
+		link: '/https://github.com/Anton1636/Crowd-Funding',
 	},
 ]
 
@@ -129,13 +143,16 @@ export const socialMedia = [
 	{
 		id: 1,
 		img: '/git.svg',
+		link: 'https://github.com/Anton1636',
 	},
 	{
 		id: 2,
 		img: '/twit.svg',
+		link: 'https://x.com/ProkopetsAnton',
 	},
 	{
 		id: 3,
 		img: '/link.svg',
+		link: 'https://www.linkedin.com/in/anton-prokopets-463b562b7/',
 	},
 ]

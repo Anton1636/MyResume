@@ -1,7 +1,7 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { CanvasRevealEffect } from './ui/CanvasRevealEffect'
+import { CanvasRevealEffect } from '@/components/ui/CanvasRevealEffect'
 
 const Approach = () => {
 	return (
@@ -57,8 +57,6 @@ const Approach = () => {
 	)
 }
 
-export default Approach
-
 const Card = ({
 	title,
 	icon,
@@ -83,6 +81,7 @@ const Card = ({
 					'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
 			}}
 		>
+			{/* change to h-10 w-10 , add opacity-30  */}
 			<Icon className='absolute h-10 w-10 -top-3 -left-3 dark:text-white text-black opacity-30' />
 			<Icon className='absolute h-10 w-10 -bottom-3 -left-3 dark:text-white text-black opacity-30' />
 			<Icon className='absolute h-10 w-10 -top-3 -right-3 dark:text-white text-black opacity-30' />
@@ -161,3 +160,4 @@ export const Icon = ({ className, ...rest }: any) => {
 		</svg>
 	)
 }
+export default Approach
